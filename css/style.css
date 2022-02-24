@@ -1,0 +1,77 @@
+body{
+    width: 1366px;
+    height: 699px;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 88, 42);
+    box-shadow: 0px 21px 27px 8px rgba(235,235,73,1);
+}
+
+header img{
+    width: 310px;
+}
+
+aside img{
+    height: 25rem;
+    width: 14rem;
+    object-fit: cover;
+}
+
+
+.pokeCard{
+    margin: 20px auto 0px auto;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(117, 116, 15, 0.616);
+    border-radius: 5px;
+}
+
+.card__photo{
+    height: 65%;
+    /* background-color: black ; */
+    
+}
+
+.card__photo img{
+    width: 90%;
+    max-height: 100%;
+    /* object-fit: cover; */
+    border-radius: 5px;
+    filter: contrast(0);
+}
+
+.inputGame input{
+    margin: 5px 0 0 0px;
+    height: 20px;
+    
+}
+
+
+
+.fixed{
+    position: absolute;
+    top: 140px;
+}
+
+.right{
+    right: 0px;
+}
+
+.left{
+    left: 0px;
+}
+
+button{
+    height: 40px;
+    /* width: 35px; */
+    background-color: rgb(168, 77, 77);
+    margin-right: 200px;
+    margin-left: 300px;
+    
+}
