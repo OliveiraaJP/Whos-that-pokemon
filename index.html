@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-be">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,50 @@
     <title>Who's That Pokemon</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAWl1cAG9v/QDWtMAANjYwAERLUAApQfgAL0JaADExpgB5eHAAPz+eAMLGwQB7eYkAt5aVADQ3/wCrq/cALkJZAJR9ggDFoqUAaGlkAJWVjQC2m54AMzdAANSyuwC8r6QANzfiAERMXwA2NzEA9OjoAKSMkQDHxsUALzdSADM7QwBnXl0AL0FYACwspQCztKsALzdRAENDnwBKSqwA1rC1ADU18QCzs7MA17TBAN+4wABbW1oAlnt0AH19qwDZsrcAh318AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHh4eHh4eHh4eHh4AAAAeKioqKioqKioqKioqHgAeKioqKhsbGxsbGyoqKioeHioqKhsxDRIoMBEbKioqHh4qKhskCwkdAxcrLBsqKh4eKhsTJBQcLhonBRUhGyoeHioEAQovGAwnGScnLRsqHh4qIAoOKSYZKRkZGScWKh4eKhAODg4ODg4OGSkZJSoeHioHDg4ODg4ODikpGR8qHh4qByMCDwYODg4OKQgHKh4eKioHAgIODg4ODikHKioeHioqKgcjDg4ODggHKioqHh4qKioqBwciIgcHKioqKh4AHioqKioqKioqKioqKh4AAAAeHh4eHh4eHh4eHh4AAMADAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAMADAAA=" rel="icon" type="image/x-icon" />
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAWl1cAG9v/QDWtMAANjYwAERLUAApQfgAL0JaADExpgB5eHAAPz+eAMLGwQB7eYkAt5aVADQ3/wCrq/cALkJZAJR9ggDFoqUAaGlkAJWVjQC2m54AMzdAANSyuwC8r6QANzfiAERMXwA2NzEA9OjoAKSMkQDHxsUALzdSADM7QwBnXl0AL0FYACwspQCztKsALzdRAENDnwBKSqwA1rC1ADU18QCzs7MA17TBAN+4wABbW1oAlnt0AH19qwDZsrcAh318AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHh4eHh4eHh4eHh4AAAAeKioqKioqKioqKioqHgAeKioqKhsbGxsbGyoqKioeHioqKhsxDRIoMBEbKioqHh4qKhskCwkdAxcrLBsqKh4eKhsTJBQcLhonBRUhGyoeHioEAQovGAwnGScnLRsqHh4qIAoOKSYZKRkZGScWKh4eKhAODg4ODg4OGSkZJSoeHioHDg4ODg4ODikpGR8qHh4qByMCDwYODg4OKQgHKh4eKioHAgIODg4ODikHKioeHioqKgcjDg4ODggHKioqHh4qKioqBwciIgcHKioqKh4AHioqKioqKioqKioqKh4AAAAeHh4eHh4eHh4eHh4AAMADAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAMADAAA="
+        rel="icon" type="image/x-icon" />
 </head>
+
 <body>
     <header>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1000marcas.net%2Fwp-content%2Fuploads%2F2020%2F01%2FLogo-Pokemon.png&f=1&nofb=1" alt="logo pokemon">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1000marcas.net%2Fwp-content%2Fuploads%2F2020%2F01%2FLogo-Pokemon.png&f=1&nofb=1"
+            alt="logo pokemon">
     </header>
     <main>
-        
-        <section class="pokeCard">
-            <div class="card__photo">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fpokemon%2Fpokemon_PNG49.png&f=1&nofb=1" alt="">
-            </div>
-            
-            <div class="inputGame"> Name:
-                <input type="text" name="" id="card__name" placeholder="pokemon name">
-            </div>
-            <div class="inputGame"> Pokedex:
-                <input type="number" name="" id="card__name" placeholder="pokedex dex number">
-            </div>
-            
-            <div class="inputGame"> Type 1:
-                <input type="text" name="" id="card__name" placeholder="pokemon type">
-            </div>
-            <div class="inputGame"> Type 2:
-                <input type="text" name="" id="card__name" placeholder="X if doesn't have 2 type">
-            </div>
+        <div class="main-page">
+            <aside class=""><img src="./img/grass.png" alt="aside poke images"></aside>
 
-        </section>
+            <section class="pokeCard">
+                <div class="card__photo">
+                    <img src=""
+                        alt="">
+                </div>
+
+                <div class="inputGame"> Name:
+                    <input type="text" name="" id="card__name" placeholder="pokemon name">
+                </div>
+                <div class="inputGame"> Pokedex:
+                    <input type="number" name="" id="card__dex" placeholder="pokedex dex number">
+                </div>
+
+                <div class="inputGame"> Type 1:
+                    <input type="text" name="" id="card__type1" placeholder="pokemon type">
+                </div>
+                <div class="inputGame"> Type 2:
+                    <input type="text" name="" id="card__type2" placeholder="X if doesn't have 2 type">
+                </div>
+
+            </section>
+
+            <aside class=""><img src="./img/water.png" alt="aside poke images"></aside>
+        </div>
         <button onclick="pokeIdRandomizer()">New Pokemon</button>
-        <button onclick="checkCorrect()">Check Correct</button>
-
-        <aside class="fixed left"><img src="./img/grass.png" alt="aside poke images"></aside>
-        <aside class="fixed right"><img src="./img/water.png" alt="aside poke images"></aside>
     </main>
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

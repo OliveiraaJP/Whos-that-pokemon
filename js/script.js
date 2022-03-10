@@ -9,7 +9,7 @@ function pokeIdRandomizer() {
     getPokemon()
 }
 
-function getPokemon(){
+function getPokemon() {
     const promise = axios.get(`${POKE__API}/${pokeId}`)
     promise.then(response => {
         poke = response.data;
@@ -17,14 +17,44 @@ function getPokemon(){
         pokeImage = poke.sprites.other;
         teste(pokeImage)
     })
-}   
+}
 
-function teste(responseImage){
+function teste(responseImage) {
     const key = 'official-artwork';
     let novaImage = responseImage[key].front_default
     console.log(novaImage);
-    
+
     document.querySelector(".card__photo").innerHTML = `
-    <img src="${novaImage}" alt="pokemon photo">
+    <img src="${novaImage}" class="grayScale" alt="pokemon photo">
     `
+}
+
+function checkCorrectName(response) {
+    if (checkEnter(response)) {
+        console.log(pokeName);
+        let inputNameAnswer = document.querySelector('#card__name').value;
+        inputNameAnswer = inputNameAnswer.toLowerCase()
+        if (validPokeName(inputNameAnswer)) {
+            
+        }
+    }
+}
+
+
+document.querySelector('#card__name').addEventListener("keyup", checkCorrectName)
+
+function checkEnter(response) {
+    if (response.key === "Enter") {
+        return true
+    } else { return false }
+}
+
+function validPokeName(answer){
+    if(answer === pokeName){
+        let pokeImage = document.querySelector('.card__photo img')
+        console.log("acertou");
+        pokeImage.classList.remove("grayScale")
+    }
+
+
 }
