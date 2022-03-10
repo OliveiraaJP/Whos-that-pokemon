@@ -6,7 +6,14 @@ let poke = null;
 function pokeIdRandomizer() {
     pokeId = Math.floor(Math.random() * (898 - 1 + 1)) + 1;
     console.log(pokeId);
+    resetInput()
     getPokemon()
+}
+
+function resetInput() {
+    let input = document.querySelector('#card__name')
+    input.classList.remove('redBackground')
+    input.classList.remove('greenBackground')
 }
 
 function getPokemon() {
@@ -35,7 +42,7 @@ function checkCorrectName(response) {
         let inputNameAnswer = document.querySelector('#card__name').value;
         inputNameAnswer = inputNameAnswer.toLowerCase()
         if (validPokeName(inputNameAnswer)) {
-            
+
         }
     }
 }
@@ -49,11 +56,18 @@ function checkEnter(response) {
     } else { return false }
 }
 
-function validPokeName(answer){
-    if(answer === pokeName){
+function validPokeName(answer) {
+    if (answer === pokeName) {
         let pokeImage = document.querySelector('.card__photo img')
         console.log("acertou");
         pokeImage.classList.remove("grayScale")
+
+        let input = document.querySelector('#card__name')
+        input.classList.remove('redBackground')
+        input.classList.add('greenBackground')
+    } else {
+        let input = document.querySelector('#card__name')
+        input.classList.add('redBackground')
     }
 
 

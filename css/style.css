@@ -1,6 +1,6 @@
 body{
-    width: 1366px;
-    height: 699px;
+    max-width: 1366px;
+   
 }
 
 .main-page{
@@ -54,6 +54,16 @@ aside img{
 .grayScale{
     filter: contrast(0);
 }
+
+.redBackground{
+    background-color: rgb(247, 139, 139);
+}
+
+.greenBackground{
+    background-color: rgb(183, 243, 93);
+}
+
+
 
 .inputGame input{
     margin: 5px 0 0 0px;
