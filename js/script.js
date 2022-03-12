@@ -2,6 +2,7 @@ const POKE__API = "https://pokeapi.co/api/v2/pokemon"
 
 let pokeId = null;
 let poke = null;
+let pokeName = null;
 
 function pokeIdRandomizer() {
     pokeId = Math.floor(Math.random() * (898 - 1 + 1)) + 1;
@@ -14,6 +15,8 @@ function resetInput() {
     let input = document.querySelector('#card__name')
     input.classList.remove('redBackground')
     input.classList.remove('greenBackground')
+
+    document.querySelector('.answer').innerHTML=`Check Answer`
 }
 
 function getPokemon() {
@@ -71,4 +74,11 @@ function validPokeName(answer) {
     }
 
 
+}
+
+function checkAnswer(){
+    let pokeUpperCase = pokeName[0].toUpperCase()+ pokeName.substr(1);
+
+
+    document.querySelector('.answer').innerHTML=`${pokeUpperCase}`;
 }

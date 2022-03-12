@@ -32,23 +32,22 @@ aside img{
 .pokeCard{
     margin: 10px auto 0px auto;
     width: 300px;
-    height: 400px;
+    
     background-color: rgba(117, 116, 15, 0.616);
     border-radius: 5px;
 }
 
-.card__photo{
-    height: 65%;
-    
-    
-}
+/* .card__photo{
+    height: 90%;
+} */
 
 .card__photo img{
     width: 90%;
     max-height: 100%;
     /* object-fit: cover; */
     border-radius: 5px;
-    
+    display: block;
+    margin: auto;
 }
 
 .grayScale{
@@ -65,22 +64,20 @@ aside img{
 
 
 
-.inputGame input{
-    margin: 5px 0 0 0px;
-    height: 20px;
+.inputGame{
+    height: 10%;
+    
 }
 
 #card__name{
-    margin-left: 16.7px;
+    width: 98.5%;
+    text-decoration: none;
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    text-align: center;
 }
 
-#card__type1{
-    margin-left: 12px;
-}
-
-#card__type2{
-    margin-left: 12px;
-}
 
 
 button{
